@@ -1,8 +1,8 @@
-# 📧 Email Classification System - Help Center
+# Email Classification System - Help Center
 
 Intelligent system for automatically classifying incoming emails into predefined categories and generating response drafts ready for review.
 
-## 📋 Description
+## Description
 
 This system uses **Machine Learning** (scikit-learn) to:
 1. Receive incoming emails
@@ -10,7 +10,7 @@ This system uses **Machine Learning** (scikit-learn) to:
 3. Generate a draft with the appropriate response
 4. Show to user for review before sending
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 email-classifier-system/
@@ -36,7 +36,7 @@ email-classifier-system/
     └── test_full_pipeline.py
 ```
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the project
 ```bash
@@ -54,7 +54,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 📊 Usage
+## Usage
 
 ### Step 1: Prepare predefined responses
 
@@ -98,7 +98,7 @@ python main.py
 # User reviews and confirms
 ```
 
-## 🔧 Modules
+## Modules
 
 ### 01_data_manager.py
 Manages predefined response database
@@ -151,7 +151,7 @@ User interface
 - `show_draft()` - Show draft
 - `confirm_and_send()` - User confirmation
 
-## 📈 Features
+## Features
 
 ✅ Automatic email classification
 ✅ Machine Learning with scikit-learn
@@ -160,7 +160,7 @@ User interface
 ✅ Confidence calculation in predictions
 ✅ Continuous feedback collection for improvement
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run unit tests
@@ -170,45 +170,45 @@ python -m pytest tests/
 python -m pytest tests/test_preprocessing.py -v
 ```
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 The model is evaluated with:
 - **Precision:** How many predictions were correct?
 - **Recall:** How many emails of each category did we identify?
 - **F1-Score:** Balance between precision and recall
 
-## 🔐 Security
+## Security
 
 - Responses stored in `data/responses.json` (read-only during normal use)
 - Model trained once and reused
 - Every email reviewed by a human before sending
 - No automatic sending, always under user control
 
-## 🛠️ Configuration
+## Configuration
 
 Edit `config.json` to adjust:
 - `confidence_threshold`: Minimum confidence to use prediction (default: 0.7)
 - `language`: Language for stopwords
 - File paths
 
-## 📝 Notes
+## Notes
 
 - System designed for maximum 50 predefined responses
 - Compatible with Python 3.8+
 - Requires ~100MB RAM
 - Training time: < 5 seconds
 
-## 🤝 Contributing
+## Contributing
 
 To add new responses:
 1. Edit `data/responses.json`
 2. Retrain model: `python main.py` → option 1
 3. Ready to use
 
-## 📧 Contact
+## Contact
 
 For questions or suggestions about this system, contact your manager.
 
-## 📄 License
+## License
 
 Internal - Projector Help Center
