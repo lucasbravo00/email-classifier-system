@@ -1,0 +1,11 @@
+{
+  "responses_path": "data/responses.json",
+  "training_emails_path": "data/training_emails.json",
+  "model_path": "data/trained_model.pkl",
+  "confidence_threshold": 0.60,
+  "language": "english",
+  "outlook": {
+    "client_id": "YOUR_AZURE_CLIENT_ID_HERE",
+    "tenant_id": "consumers"
+  }
+}
